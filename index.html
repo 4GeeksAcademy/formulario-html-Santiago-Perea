@@ -12,30 +12,30 @@
 </head>
 
 <body>
-    <div class="container overflow-hidden p-4 border">
-        <div class="row bg-light border border-personalizado">
+    <div class="container overflow-hidden border rounded">
+        <div class="row bg-light border rounded">
             <div class="col-auto">
                 <h1>Payment form example</h1>
             </div>
         </div>
-        <div class="form p-4 g-2">
+        <div class="form p-3 g-2">
             <div class="row missing-header">
-                <div class="col-auto text-danger">
+                <div class="col-auto text-danger align-items-top">
                     <p>Some fields are missing</p>
                 </div>
             </div>
         
             <div class="row">
-                <div class="col-6">
+                <div class="col-5">
                     <label for="exampleInputCard1" class="form-label">Card: #</label><br>
-                    <input type="number" class="form-number w-50" size="100" id="exampleInputCard1"
+                    <input type="text" class="form-control w-100" size="100" id="exampleInputCard1"
                         placeholder="XXXXXXXXXXXXXXXXXXXX">
                 </div>
-                <div class="col-3 ">
-                    <label for="exampleInputCvc1" class="form-label">CVC: #</label><br>
-                    <input type="number" class="form-number" id="exampleInputCvc1" placeholder="0000" maxlength="4">
-                </div>
                 <div class="col-3">
+                    <label for="exampleInputCvc1" class="form-label">CVC: #</label><br>
+                    <input type="text" class="form-control w-100" id="exampleInputCvc1" placeholder="0000" maxlength="4">
+                </div>
+                <div class="col-4">
                     <label for="exampleInputAmount1" class="form-label">Amount:</label><br>
                     <div class="input-group-prepend d-flex">
                         <span class="input-group-text">$</span>
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-3">
                     <label for="inputSelectState01" class="form-label">State:</label><br>
-                    <select class="custom-select w-100 h-50" id="inputSelectState01">
+                    <select class="form-select w-100 h-70" id="inputSelectState01">
                         <option selected>Pick a State...</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -72,33 +72,37 @@
                     <input type="text" class="form-control w-100" id="exampleInputPostal1">
                 </div>
             </div>
-            <div class="row h-100 pb-5">
-                <div class="col-6 bc-light">
-                    <label for="inLineSelector1" class="form-label d-block">We accept: </label>
-                    <div class="form-check form-check-inline" id="inLineSelector1">
+            <div class="row h-75 pb-5">
+                <div class="col-3">
+                    <label for="inLineSelector1" class="form-label d-block pb-2">We accept: </label>
+                    <div class="bg-secondary rounded h-10 p-2">
+                        <div class="form-check form-check-inline pe-2" id="inLineSelector1">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineOption1"
                             value="option1">
                         <label class="form-check-label" for="inlineOption1"><i class="fa fa-cc-mastercard"></i></label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-check form-check-inline pe-2">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineOption2"
                             value="option2">
                         <label class="form-check-label" for="inlineOption2"><i class="fa fa-cc-visa"></i></label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-check form-check-inline pe-2">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineOption3"
                             value="option3">
                         <label class="form-check-label" for="inlineOption3"><i class="fa fa-cc-amex"></i></label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        </div>
+                        <div class="form-check form-check-inline ">
                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineOption4"
                             value="option4">
                         <label class="form-check-label" for="inlineOption4"><i class="fa fa-cc-paypal"></i></label>
+                        </div>
                     </div>
                 </div>
-                <div class="col-6 pb-4">
+                <div class="col-3">
+                </div>
+                <div class="col-6">
                     <label for="exampleInputText1" class="form-label">Message:</label>
-                    <textarea class="form-control h-100" rows="7" aria-describedby="textHelp"></textarea>
+                    <textarea class="form-control h-75" rows="2" aria-describedby="textHelp"></textarea>
                     <div id="textHelp" class="form-text">Add any notes here.</div>
                 </div>
             </div>
